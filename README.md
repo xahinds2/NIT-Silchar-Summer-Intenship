@@ -1,2 +1,2 @@
-# NIT-Silchar-Summer-Intenship
+# Summer Intenship Project
  Responsive Website for Institute Library
