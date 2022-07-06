@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -16,7 +17,8 @@
 
         <nav>
             <a href="index.html"><img src="./images/nit-logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -26,15 +28,53 @@
                 </ul>
                 
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         
         <div class="text-box">
-            <h1>World's 2nd Largest Library</h1>
+            <h1>Asia's 2nd Largest Library</h1>
             <p>Making website for nit silchar Library i know it sucks so i am trying to improve it</p>
             <a href="" class="hero-btn">Visit us to know more</a>
         </div>
         
     </section>
+
+    <!-- Course -->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Engineering, Management, etc</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Easy</h3>
+                <p>Arts</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Commerce</p>
+            </div>
+            <div class="course-col">
+                <h3>Hard</h3>
+                <p>Science</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+    <!-- JavaScript for toogle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
 
 </body>
 </html>
